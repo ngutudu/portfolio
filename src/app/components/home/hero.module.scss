@@ -1,0 +1,11 @@
+.hero {
+  position: relative;
+  z-index: 1000;
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    background-color: #fdc901;
+    width: 360px;
+  }
+}

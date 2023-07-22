@@ -1,0 +1,50 @@
+.home {
+  width: 100%;
+  .container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    min-height: 100vh;
+    .content {
+      width: 50%;
+      h2 {
+        font-size: 50px;
+        font-weight: 800;
+        color: #002057;
+      }
+      h4 {
+        font-size: 25px;
+        font-weight: 600;
+        color: #002057;
+      }
+      .button {
+        margin-top: 20px;
+        text-transform: none;
+        border-radius: 25px;
+        height: 48px;
+        width: 180px;
+        padding: 5px;
+        background-color: #2506ad;
+        font-size: 17px;
+        font-family: Poppins, sans-serif;
+        display: flex;
+        gap: 10px;
+      }
+      .socials {
+        margin-top: 20px;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #09011b;
+          border-radius: 50%;
+          width: 44px;
+          height: 44px;
+        }
+      }
+    }
+  }
+}
