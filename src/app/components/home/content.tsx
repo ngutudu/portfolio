@@ -1,5 +1,6 @@
 "use client";
 
+import { MouseEvent } from "react";
 import { Button } from "@mui/material";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,6 +10,19 @@ import styles from "./content.module.scss";
 import { TextTyping } from "./text-typing";
 
 export const Content = () => {
+  const handleClick = (id: string) => (e: MouseEvent<HTMLElement>) => {
+    e.preventDefault();
+    const element = window.document.getElementById(id);
+    if (element) {
+      setTimeout(() => {
+        element.scrollIntoView({
+          block: "start",
+          behavior: "smooth",
+        });
+      }, 500);
+    }
+  };
+
   return (
     <div className={styles.content}>
       <h2>
@@ -29,7 +43,7 @@ export const Content = () => {
         whileInView={{ opacity: 1, scale: 1, translateY: 0 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
       >
-        <Button className={styles.button} variant="contained">
+        <Button className={styles.button} variant="contained" onClick={handleClick("about")}>
           About me <FontAwesomeIcon icon={faArrowCircleDown} />
         </Button>
       </motion.div>

@@ -34,10 +34,12 @@ export const Header = () => {
     e.preventDefault();
     const element = window.document.getElementById(id);
     if (element) {
-      element.scrollIntoView({
-        block: "start",
-        behavior: "smooth",
-      });
+      setTimeout(() => {
+        element.scrollIntoView({
+          block: "start",
+          behavior: "smooth",
+        });
+      }, 500);
     }
   };
 
