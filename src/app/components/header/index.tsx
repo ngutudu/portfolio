@@ -46,7 +46,7 @@ export const Header = () => {
       <Container>
         <Toolbar>
           <a href="/" className={styles.logo}>
-            <FontAwesomeIcon icon={faNodeJs} color="black" size="xl" />
+            <FontAwesomeIcon icon={faNodeJs} size="xl" className={styles.icon} />
             <span className={styles.name}>ngutudu</span>
           </a>
           <Box className={styles.navbar}>

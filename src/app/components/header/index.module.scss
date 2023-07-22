@@ -3,9 +3,24 @@
   align-items: center;
   gap: 5px;
 
+  .icon {
+    color: black;
+    transition: color 0.5s;
+  }
+
   .name {
     font-size: 20px;
     font-weight: 600;
+    transition: color 0.2s;
+  }
+
+  &:hover {
+    .icon {
+      color: #fc8c05;
+    }
+    .name {
+      color: #fc8c05;
+    }
   }
 }
 
