@@ -60,8 +60,8 @@ export const Experience = () => {
                 whileInView={{ opacity: 1, scale: 1, translateY: 0 }}
                 transition={{ duration: 0.5, ease: "easeOut" }}
               >
-                <div className={styles.content}>
-                  <h2>Oraichain Labs | Kawaiiverse Team</h2>
+                <div className={`${styles.content} ${styles.left}`}>
+                  <h2>Oraichain Labs</h2>
                   <h3>Tech Lead</h3>
                   <p>March 2023 - June 2023</p>
                 </div>
@@ -114,7 +114,7 @@ export const Experience = () => {
                 whileInView={{ opacity: 1, scale: 1, translateY: 0 }}
                 transition={{ duration: 0.5, ease: "easeOut" }}
               >
-                <div className={styles.content}>
+                <div className={`${styles.content} ${styles.left}`}>
                   <h2>BKC Labs | HUST</h2>
                   <h3>Mobile Application Developer | Partime</h3>
                   <p>Jan 2020 - Sep 2020</p>
@@ -168,7 +168,7 @@ export const Experience = () => {
                 whileInView={{ opacity: 1, scale: 1, translateY: 0 }}
                 transition={{ duration: 0.5, ease: "easeOut" }}
               >
-                <div className={styles.content}>
+                <div className={`${styles.content} ${styles.left}`}>
                   <h2>Rabiloo</h2>
                   <h3>PHP Developer | Internship</h3>
                   <p>March 2019 - June 2019</p>

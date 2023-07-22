@@ -24,6 +24,32 @@
   }
 }
 
+.menu1 {
+  animation: rotate1 0.5s;
+}
+
+.menu2 {
+  animation: rotate2 0.5s;
+}
+
+@keyframes rotate1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(179deg);
+  }
+}
+
+@keyframes rotate2 {
+  0% {
+    transform: rotate(179deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 .navbar {
   display: flex;
   gap: 25px;
@@ -32,5 +58,29 @@
     font-size: 16px;
     font-weight: 600;
     padding: 5px 0;
+  }
+}
+
+.navbar-mobile {
+  position: fixed;
+  top: 56px;
+  right: 0;
+  z-index: 1000;
+  height: 100%;
+  width: 0;
+  padding: 20px 0;
+  background-color: #0e0f31;
+  transition: all 0.2s;
+  box-sizing: border-box;
+
+  &.open {
+    width: 100%;
+    padding: 20px 15px;
+  }
+
+  a {
+    padding: 1rem;
+    color: #fff;
+    display: block;
   }
 }

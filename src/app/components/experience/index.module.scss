@@ -40,5 +40,20 @@
         height: 0;
       }
     }
+    h2 {
+      @media(max-width: 600px) {
+        font-size: 18px;
+      }
+    }
+    h3 {
+      @media(max-width: 600px) {
+        font-size: 12px;
+      }
+    }
+    p {
+      @media(max-width: 600px) {
+        font-size: 11px;
+      }
+    }
   }
 }

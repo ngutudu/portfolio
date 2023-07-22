@@ -1,11 +1,12 @@
 .hero {
   position: relative;
-  z-index: 1000;
+  z-index: 100;
+  flex: 1 1 30rem;
   img {
     width: 100%;
     height: auto;
     border-radius: 50%;
     background-color: #fdc901;
-    width: 360px;
+    max-width: 360px;
   }
 }

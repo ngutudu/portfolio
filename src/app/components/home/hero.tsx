@@ -17,10 +17,10 @@ const defaultOptions = {
 
 export const Hero = () => {
   return (
-    <Tilt options={defaultOptions} style={{ height: 250, width: 250 }}>
-      <div className={styles.hero}>
+    <div className={styles.hero}>
+      <Tilt options={defaultOptions}>
         <img src="/images/hero.png" />
-      </div>
-    </Tilt>
+      </Tilt>
+    </div>
   );
 };

@@ -1,24 +1,26 @@
 .aboutme {
   min-height: 100vh;
-  padding: 30px 0;
+  padding: 30px 15px;
   h1 {
     font-size: 35px;
     font-weight: 800;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
   .content {
     display: flex;
+    flex-wrap: wrap;
     .images {
-      flex: 1 1 35rem;
+      flex: 1 1 30rem;
       text-align: center;
+      margin-bottom: 15px;
       img {
-        width: 250px;
+        width: 300px;
         border-radius: 15px 30px;
       }
     }
     .info {
-      flex: 1 1 45rem;
+      flex: 1 1 35rem;
       p {
         font-size: 15px;
         margin-top: 20px;

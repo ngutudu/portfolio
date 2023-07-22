@@ -4,7 +4,9 @@
   .container {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 15px;
     min-height: 100vh;
+    padding-top: 64px;
   }
 }
