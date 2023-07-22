@@ -38,7 +38,7 @@ export const AboutMe = () => {
             whileInView={{ opacity: 1, scale: 1, translateY: 0 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
           >
-            <h2>I'm ngutudu</h2>
+            <h2>I&apos;m ngutudu</h2>
             <h4>Fullstack developer</h4>
           </motion.div>
           <motion.div

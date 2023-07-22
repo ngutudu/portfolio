@@ -27,7 +27,7 @@ export const Content = () => {
     <div className={styles.content}>
       <h2>
         Hi There, <br />
-        I'm ngutudu
+        I&apos;m ngutudu
       </h2>
       <motion.div
         initial={{ opacity: 0.5, translateY: -50 }}
