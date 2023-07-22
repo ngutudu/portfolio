@@ -4,6 +4,7 @@ import { useCallback } from "react";
 import Particles from "react-particles";
 import type { Container, Engine } from "tsparticles-engine";
 import { loadSlim } from "tsparticles-slim";
+import "./particals.scss";
 
 export const Particals = () => {
   const particlesInit = useCallback(async (engine: Engine) => {

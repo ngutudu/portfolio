@@ -1,0 +1,44 @@
+.experience {
+  min-height: 100vh;
+  padding: 30px 0;
+  text-align: center;
+  background-color: #e5ecfb;
+  h1 {
+    font-size: 35px;
+  }
+  .content {
+    background-color: #f68c09;
+    padding: 15px;
+    font-size: 13px;
+    color: black;
+    border-radius: 10px;
+    position: relative;
+    text-align: left;
+    &::after {
+      content: " ";
+      position: absolute;
+      left: -8px;
+      top: 15px;
+      border-right: 8px solid #f68c09;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+      width: 0;
+      height: 0;
+    }
+    &.left {
+      &::after {
+        content: " ";
+        position: absolute;
+        left: unset;
+        right: -8px;
+        top: 15px;
+        border-right: unset;
+        border-left: 8px solid #f68c09;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        width: 0;
+        height: 0;
+      }
+    }
+  }
+}
